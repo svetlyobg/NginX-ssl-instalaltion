@@ -30,17 +30,16 @@ exit
 cd /etc/nginx/sites-
 cd /etc/nginx/sites-enabled/
 ls
-nano``` **_EXAMPLE.COM-** 
-```console
+nano **_EXAMPLE.COM_** 
 cd /etc/certs
 cd /etc/ssl/certs
 ls
 openssl x509 -noout -in need.crt 
 openssl x509 -noout -text -in need.crt 
 cd ~/
-openssl req -new -newkey rsa:2048 -nodes -keyout need_new.key -out need_new.csr
+openssl req -new -newkey rsa:2048 -nodes -keyout EXAMPLE_YEAR.key -out EXAMPLE_YEAR.csr
 ls
-less need_new.csr 
+less EXAMPLE_YEAR.csr 
 ls
 cat www_needhampoulier_co_uk.crt www_needhampoulier_co_uk.ca-bundle 
 cat www_needhampoulier_co_uk.crt www_needhampoulier_co_uk.ca-bundle >> need_new.crt
