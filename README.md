@@ -1,7 +1,7 @@
 # NginX-ssl-instalaltion
 
 ```console
-cd /etc/ssl <!--- your comment goes here and here -->
+cd /etc/ssl <!--- папката със сертификатите -->
 ls
 cd certs
 ls
