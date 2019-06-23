@@ -1,5 +1,5 @@
 # NginX-ssl-instalaltion
 
-'''bash
+'''console
 cd Desktop
 '''
