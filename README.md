@@ -30,7 +30,7 @@ exit
 cd /etc/nginx/sites-
 cd /etc/nginx/sites-enabled/
 ls
-nano **_EXAMPLE.COM_** 
+nano **EXAMPLE.COM** 
 cd /etc/certs
 cd /etc/ssl/certs
 ls
