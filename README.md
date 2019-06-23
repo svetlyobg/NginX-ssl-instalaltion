@@ -1,10 +1,7 @@
 # NginX-ssl-instalaltion
 
 ```console
-cd /etc/ssl
-```
-<!--- папката със сертификатите -->
-```
+cd /etc/ssl <!--- папката със сертификатите -->
 ls
 cd certs
 ls
@@ -33,7 +30,7 @@ exit
 cd /etc/nginx/sites-
 cd /etc/nginx/sites-enabled/
 ls
-nano needhampoulier.co.uk 
+nano **_EXAMPLE.COM_** 
 cd /etc/certs
 cd /etc/ssl/certs
 ls
