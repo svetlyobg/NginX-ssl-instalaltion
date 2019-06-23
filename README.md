@@ -1,7 +1,7 @@
 # NginX-ssl-instalaltion
 
 ```console
-cd /etc/ssl
+cd /etc/ssl [/comm/]
 ls
 cd certs
 ls
