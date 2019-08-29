@@ -23,7 +23,7 @@ cd ~/
 openssl req -new -newkey rsa:2048 -nodes -keyout tab_example_2019.key -out tab_example_2019.csr
 ```
 
-5. Check and copy CSR INTO NAMECHEAP
+5. Check and copy CSR into Namecheap
 ```console
 cat tab_example_2019.csr
 ```
