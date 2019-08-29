@@ -1,15 +1,19 @@
-# ssl
+# ssl instalaltion on NginX
 
 
-CHECK current config
+1. Check current configuration
 ```console
 less /etc/nginx/sites-enabled/tab.example.co.uk
 ```
+2. Show configuration
+```console
+to do - show configuration
+```
 
-```to do - show configuration```
-
-Find certificates location
->/etc/ssl/tab.example.co.uk/
+3. Find certificates location
+```console
+/etc/ssl/tab.example.co.uk/
+```
 
 Go to home dir and generate ceritificate request(CSR) and private key
 >cd ~/  
