@@ -2,7 +2,9 @@
 
 
 CHECK current config
->less /etc/nginx/sites-enabled/tab.example.co.uk
+```console
+less /etc/nginx/sites-enabled/tab.example.co.uk
+```
 
 ```to do - show configuration```
 
