@@ -71,7 +71,7 @@ cd ~/
 
 10. Move the pem to the SSL folder
 ```console
-sudo mv pevm /etc/ssl/tab.example.co.uk/
+sudo mv pem /etc/ssl/tab.example.co.uk/
 ```
 
 11. Move the key to the SSL folder
