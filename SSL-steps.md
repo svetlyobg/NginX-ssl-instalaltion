@@ -5,12 +5,12 @@
 ```console
 less /etc/nginx/sites-enabled/tab.example.co.uk
 ```
-2. Show configuration
+1. Show configuration
 ```console
 to do - show configuration
 ```
 
-3. Find certificates location
+1. Find certificates location
 ```console
 /etc/ssl/tab.example.co.uk/
 ```
@@ -54,6 +54,7 @@ ls
 ```console
 sudo cp key key.2019.old
 sudo cp pem pem.2019.old
+sudo cp crt crt.2019.old
 ```
 
 9. Concat the certificate and the certificates of the issuer (certificate chain) 
