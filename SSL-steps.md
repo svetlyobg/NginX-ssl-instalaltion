@@ -3,14 +3,14 @@
 
 1. Check current configuration
 ```console
-less /etc/nginx/sites-enabled/tab.example.co.uk
+less /etc/nginx/sites-enabled/*tab.example.co.uk*
 ```
-1. Show configuration
+2. Show configuration
 ```console
 to do - show configuration
 ```
 
-1. Find certificates location
+3. Find certificates location
 ```console
 /etc/ssl/tab.example.co.uk/
 ```
@@ -24,6 +24,7 @@ openssl req -new -newkey rsa:2048 -nodes -keyout tab_example_2019.key -out tab_e
 ```
 
 5. Check and copy CSR into Namecheap
+
 ```console
 cat tab_example_2019.csr
 ```
@@ -41,8 +42,10 @@ mK0SNYQbgVpcIjJ5mImlrFs8V3kv3oEQfzE=
 -----END CERTIFICATE REQUEST-----
 ```
 
-6. Upload the bundle and .crt to the home directory (/home/user/) ( filezilla, scp,).
-*BUNDLE - your certificate* and the certificates of the issuer (certificate chain). The certificate contains the public key.
+Choose - **Any other service - (cPanel, Apache, NGINX)** and then confirm the domain by **email verification** (the SSL will be emailed).
+
+6. Upload the bundle and .crt to the home directory (/home/user/*website*) ( filezilla, scp,).
+*BUNDLE - your certificate* and the certificates of the issuer (certificate chain). The certificate contains the public key. Verify it 
 
 7. Go to folder with current certificates
 ```console
@@ -55,6 +58,7 @@ ls
 sudo cp key key.2019.old
 sudo cp pem pem.2019.old
 sudo cp crt crt.2019.old
+sudo cp bundle bundle.2019.old
 ```
 
 9. Concat the certificate and the certificates of the issuer (certificate chain) 
