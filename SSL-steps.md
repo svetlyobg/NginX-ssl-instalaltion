@@ -3,7 +3,7 @@
 
 1. Check current configuration
 ```console
-less /etc/nginx/sites-enabled/*tab.example.co.uk*
+less /etc/nginx/sites-enabled/tab.example.co.uk
 ```
 2. Show configuration
 ```console
