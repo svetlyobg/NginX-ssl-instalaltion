@@ -1,13 +1,13 @@
 # SSL Instalaltion On NginX
 
 ***
-# How to Install/Renew Nginx/Ubuntu SSL Certificate 
+# How to install/renew SSL Certificate on Ubuntu running on Nginx
 
 ### 1. Request CSR
 ```console
 openssl req -new -newkey rsa:2048 -nodes -keyout  DOMAIN.key -out DOMAIN.csr
 ```
-### 2. Open, Copy and Paste the CSR Into the CA
+### 2. Open, copy and paste the CSR into the CA
 ```console
 cat DOMAIN.csr
 ```
@@ -20,37 +20,37 @@ mK0SNYQbgVpcIjJ5mImlrFs8V3kv3oEQfzE=
 
 -----END CERTIFICATE REQUEST-----
 
-### 4. Somehow Validate the CSR
+### 4. Somehow validate the CSR
 
-### 5. Somehow Upload Both .ca-bundle and .crt to the Server
+### 5. Somehow upload both .ca-bundle and .crt to the Server
 
-### 6. Backup the Previous .key and pem files
+### 6. Backup the previous certificate files
 ```console
 cd /etc/ssl/WEBSITE-DIRECTORY/
 sudo cp DOMAINKEY DOMAINKEY.old
 sudo cp DOMAINPEM DOMAINPEM.old
 sudo cp DOMAINCRT DOMAINCRT.old
-sudo cp DOMAINBUNDLE DOMAIN.old
+sudo cp DOMAINBUNDLE DOMAINBUNDLE.old
 ```
-### 7. Create a New pem File
+### 7. Create a new pem file
 ```console
 cd ~/
 cat DOMAIN.crt DOMAIN.ca-bundle >> pem
 ```
-### 8. Check if the – – – BEGIN AND – – – END – Certificate Lines are Correctly Written
+### Check if both the _**-----BEGIN CERTIFICATE REQUEST-----**_ and _**-----END CERTIFICATE REQUEST-----**_ lines are correctly written and in place
 ```console
 less pem
 ```
-### 9. Change The .key Permissions To Read-Only
+### 9. Change the .key permissions to read-only
 ```console
 sudo chmod 400 key
 ```
-### 10. Move Both the New pem and the New key Files to the SSL Directory
+### 10. Move both the new pem and key files to the SSL directory
 ```console
 sudo mv pem /etc/ssl/WEBSITE-DIRECTORY/
 sudo mv DOMAIN.key /etc/ssl/WEBSITE-DIRECTORY/key
 ```
-### 11. Restart the Nginx Service
+### 11. Restart the Nginx service
 ```console
 sudo service nginx restart
 ```
